@@ -4,6 +4,12 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link
+      rel="icon"
+      sizes="192x192"
+      href="https://static.wixstatic.com/media/a2849b_1a724537eefd439fa60662b5a3e47d23%7Emv2.gif/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/a2849b_1a724537eefd439fa60662b5a3e47d23%7Emv2.gif"
+      type="image/png"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
       rel="stylesheet"
     />
@@ -57,7 +63,7 @@
               "on-error-container": "#ffb2b9",
               surface: "#423264",
               "surface-container-lowest": "#000000",
-              "secondary-fixed": "#e1e1f5",
+              "secondary-fixed": "#b3dff7",
               "on-secondary-fixed-variant": "#595a6b",
               "surface-container": "#1f0c14",
               "secondary-container": "#444655",
@@ -113,7 +119,7 @@
         >
       </div>
       <div
-        class="font-['Space_Grotesk'] uppercase tracking-tighter text-sm text-[#e1e1f5] steps-5 cursor-pointer px-2"
+        class="font-['Space_Grotesk'] uppercase tracking-tighter text-sm text-[#b3dff7] steps-5 cursor-pointer px-2"
       >
         [ _ □ X ]
       </div>
@@ -123,11 +129,13 @@
       class="pt-20 pb-24 px-4 md:px-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6"
     >
       <!-- Profile Sidebar (Window Style) -->
-      <aside class="md:col-span-4 lg:col-span-3 space-y-6">
+      <aside id="home" class="md:col-span-4 lg:col-span-3 space-y-6">
         <div
           class="bg-surface-container border-2 border-primary shadow-[4px_4px_0px_0px_#fdb5cc]"
         >
-          <div id="home" class="bg-primary px-3 py-1 flex justify-between items-center">
+          <div
+            class="bg-primary px-3 py-1 flex justify-between items-center"
+          >
             <span
               class="text-on-primary text-xs font-bold uppercase tracking-widest"
               >USER_ID</span
@@ -157,7 +165,7 @@
                 TRILLO_LILLO
               </h1>
               <p class="text-on-surface-variant text-xs">
-                DESARROLLADORA FULLSTACK<br />ANIMADORA DIGITAL<br />Chile
+                FULLSTACK DEVELOPER <br />2D DIGITAL ANIMATOR <br />PIXEL ARTIST<br />Chile / ENG / ESP
               </p>
             </div>
             <div class="flex flex-wrap gap-2">
@@ -165,7 +173,7 @@
                 class="bg-surface-bright text-secondary text-[10px] px-2 py-0.5 border border-outline-variant uppercase"
                 >Online</span
               >
-              <span 
+              <span
                 class="bg-surface-bright text-tertiary text-[10px] px-2 py-0.5 border border-outline-variant uppercase"
                 ><a href="#contacto">CONTACT</a></span
               >
@@ -174,7 +182,7 @@
         </div>
         <!-- Links -->
         <div
-          class="bg-surface-container border-2 border-secondary shadow-[4px_4px_0px_0px_#e1e1f5]"
+          class="bg-surface-container border-2 border-secondary shadow-[4px_4px_0px_0px_#b3dff7]"
         >
           <div class="bg-secondary px-3 py-1 flex justify-between items-center">
             <span
@@ -211,7 +219,10 @@
       <div class="md:col-span-8 lg:col-span-9 space-y-6">
         <!-- BIOGRAPHY Section (Window) -->
         <section class="bg-surface-container border-2 border-primary">
-          <div id="sobre_mi" class="bg-primary px-3 py-1 flex justify-between items-center">
+          <div
+            id="About_Me"
+            class="bg-primary px-3 py-1 flex justify-between items-center"
+          >
             <span
               class="text-on-primary text-xs font-bold uppercase tracking-widest"
               >ABOUT_ME.txt</span
@@ -221,15 +232,12 @@
           <div class="p-6 space-y-4">
             <div class="flex items-start gap-2 text-primary font-bold">
               <span>&gt;</span>
-              <h2  class="uppercase tracking-widest text-sm">
-                sobre_mi
-              </h2>
+              <h2 class="uppercase tracking-widest text-sm">about_me</h2>
             </div>
             <p
               class="text-on-surface leading-relaxed text-sm bg-surface-container-low p-4 border-l-4 border-tertiary"
             >
-              Artista digital, Youtuber, Streamer, Podcaster y Desarrolladora
-              Fullstack. Le dedico mi tiempo a la creatividad
+              Digital Artist, Youtuber, Streamer, Podcaster and Fullstack Developer (Trainee). I dedicate my time and soul to creativity. I'm always eager to learn new things. Based on Chile.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
               <!-- Skill Bars -->
@@ -325,15 +333,14 @@
         </section>
         <!-- Bento Grid Visuals -->
         <section
-          id="projects"
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
         >
           <div
-            class="bg-surface-container border border-primary h-32 flex items-center justify-center relative group cursor-pointer overflow-hidden"
+            id="projects" class="bg-surface-container border border-primary h-32 flex items-center justify-center relative group cursor-pointer overflow-hidden"
           >
             <img
               class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
-              data-alt="close up of retro futuristic hardware with pink and blue glowing lights in a dark room"
+              data-alt="aesthetic code blocks on a monitor with purple and pink glowing reflections"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzfkSBVmwLvsC1BhBAcRjnw82MiYyb8qs1GcTWpitay5ybjkdqrRf0buSnGlgTMCfVMv-Z0bycm12BtyQ5grGZ4VotyIEY_xwXiXoJ0ZlFSfV1i9gZzlzbaCVGSciR5znoazPsfUXDwekqlNs24qVm4KgMA6eQUa5l_2jIM_hm7hNfsY0wyzzoxXWiwYPHp-I3-7Na1a7W5t7krm6OXFvZgpLf4LfyOTjiOpmpGhXg9dzqMCkrhopJtOi5qkD4V3rZcSBYV6UtMzQ0"
             />
             <span
@@ -342,36 +349,69 @@
             >
           </div>
           <div
-            class="bg-surface-container border border-secondary h-32 flex items-center justify-center relative group cursor-pointer overflow-hidden"
+            onclick="toggleButtons('gourmet-actions')"
+            class="bg-surface-container border border-primary flex flex-col  cursor-pointer"
           >
-            <img
-              class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
-              data-alt="aesthetic code blocks on a monitor with purple and pink glowing reflections"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzfkSBVmwLvsC1BhBAcRjnw82MiYyb8qs1GcTWpitay5ybjkdqrRf0buSnGlgTMCfVMv-Z0bycm12BtyQ5grGZ4VotyIEY_xwXiXoJ0ZlFSfV1i9gZzlzbaCVGSciR5znoazPsfUXDwekqlNs24qVm4KgMA6eQUa5l_2jIM_hm7hNfsY0wyzzoxXWiwYPHp-I3-7Na1a7W5t7krm6OXFvZgpLf4LfyOTjiOpmpGhXg9dzqMCkrhopJtOi5qkD4V3rZcSBYV6UtMzQ0"
-            />
-            <span
-              class="relative z-10 text-[10px] font-bold uppercase tracking-widest text-secondary border border-secondary px-3 py-1 bg-background/80"
-              >Gourmet_Go</span
+            <div
+              class="h-32 flex items-center justify-center relative overflow-hidden"
             >
+              <img
+                class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
+                alt="table with lots of food looked from above."
+                src="https://images.unsplash.com/photo-1592417817038-d13fd7342605?q=80&w=1170&auto=format&fit=crop"
+              />
+              <div class="relative z-10 flex flex-col items-center gap-2">
+                <span
+                  class="text-[10px] font-bold uppercase tracking-widest text-secondary border border-secondary px-3 py-1 bg-background/80"
+                >
+                  Gourmet_Go
+                </span>
+                <span class="text-[8px] text-secondary animate-pulse uppercase"
+                  >[ Click to see more ]</span
+                >
+              </div>
+            </div>
+
+            <div
+              id="gourmet-actions"
+              class="hidden flex border-t bg-surface-container-low animate-in slide-in-from-top duration-300"
+            >
+              <a
+                href="https://github.com/TrilloLillo/EF-M4-Gourmet-Go"
+                target="_blank"
+                onclick="event.stopPropagation()"
+                class="flex-1 text-center py-2 text-[10px] font-bold uppercase tracking-tighter text-secondary hover:bg-secondary hover:text-on-secondary transition-colors border-r border-secondary"
+              >
+                <i class="fa fa-github mr-1"></i> Repo
+              </a>
+              <a
+                href="https://trillolillo.github.io/EF-M4-Gourmet-Go/"
+                target="_blank"
+                onclick="event.stopPropagation()"
+                class="flex-1 text-center py-2 text-[10px] font-bold uppercase tracking-tighter text-tertiary hover:bg-tertiary hover:text-on-tertiary transition-colors"
+              >
+                <i class="fa fa-external-link mr-1"></i> Live Demo
+              </a>
+            </div>
           </div>
-          <div
+          <a href="https://nintenella.club" target="_blank"><div
             class="bg-surface-container border border-tertiary h-32 flex items-center justify-center relative group cursor-pointer overflow-hidden sm:col-span-2 lg:col-span-1"
           >
             <img
               class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
-              data-alt="abstract electronic circuit board with glowing neon mint highlights"
+              data-alt="the first 151 pokemon drawn in a cute way by nintenella"
               src="https://static.wixstatic.com/media/a2849b_4353dc94ec9d4009b5a96c008834d9c8~mv2.png"
             />
             <span
               class="relative z-10 text-[10px] font-bold uppercase tracking-widest text-tertiary border border-tertiary px-3 py-1 bg-background/80"
               >ART_PORTFOLIO</span
             >
-          </div>
+          </div></a>
         </section>
-        <!--Contacto-->
+        <!-- Contacto -->
         <section
           id="contacto"
-          class="bg-surface-container border-2 border-secondary shadow-[4px_4px_0px_0px_#e1e1f5] mt-6"
+          class="bg-surface-container border-2 border-secondary shadow-[4px_4px_0px_0px_#b3dff7] mt-6"
         >
           <div class="bg-secondary px-3 py-1 flex justify-between items-center">
             <div class="flex items-center gap-2">
@@ -414,7 +454,7 @@
                     name="name"
                     required
                     class="w-full bg-surface-container-low border border-outline-variant text-on-surface text-sm p-2 focus:ring-0 focus:border-primary transition-colors placeholder:text-outline/50"
-                    placeholder="Introduce tu nombre..."
+                    placeholder="Your Name..."
                   />
                 </div>
                 <div class="space-y-1">
@@ -427,7 +467,7 @@
                     name="email"
                     required
                     class="w-full bg-surface-container-low border border-outline-variant text-on-surface text-sm p-2 focus:ring-0 focus:border-primary transition-colors placeholder:text-outline/50"
-                    placeholder="correo@ejemplo.com"
+                    placeholder="mail@example.com"
                   />
                 </div>
               </div>
@@ -441,7 +481,7 @@
                   type="text"
                   name="subject"
                   class="w-full bg-surface-container-low border border-outline-variant text-on-surface text-sm p-2 focus:ring-0 focus:border-primary transition-colors placeholder:text-outline/50"
-                  placeholder="¿De qué trata tu mensaje?"
+                  placeholder="What's your message about?"
                 />
               </div>
 
@@ -455,7 +495,7 @@
                   rows="4"
                   required
                   class="w-full bg-surface-container-low border border-outline-variant text-on-surface text-sm p-2 focus:ring-0 focus:border-primary transition-colors placeholder:text-outline/50 resize-none"
-                  placeholder="Escribe tu mensaje aquí..."
+                  placeholder="Type your message here..."
                 ></textarea>
               </div>
 
@@ -484,7 +524,7 @@
       class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 px-2 bg-[#100c18] dark:bg-[#522236] border-t-2 border-[#fdb5cc]"
     >
       <a
-        class="flex flex-col items-center justify-center text-[#e1e1f5] p-1 hover:bg-[#e1e1f5]/10 group"
+        class="flex flex-col items-center justify-center text-[#b3dff7] p-1 hover:bg-[#b3dff7]/10 group"
         href="#home"
       >
         <span
@@ -498,7 +538,19 @@
         >
       </a>
       <a
-        class="flex flex-col items-center justify-center text-[#e1e1f5] p-1 hover:bg-[#e1e1f5]/10 group"
+        class="flex flex-col items-center justify-center text-[#b3dff7] p-1 hover:bg-[#b3dff7]/10 group"
+        href="#About_Me"
+      >
+        <span class="material-symbols-outlined" data-icon="person_pin"
+          >person_pin</span
+        >
+        <span
+          class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest"
+          >ME</span
+        >
+      </a>
+      <a
+        class="flex flex-col items-center justify-center text-[#b3dff7] p-1 hover:bg-[#b3dff7]/10 group"
         href="#projects"
       >
         <span
@@ -512,19 +564,7 @@
         >
       </a>
       <a
-        class="flex flex-col items-center justify-center text-[#e1e1f5] p-1 hover:bg-[#e1e1f5]/10 group"
-        href="#sobre_mi"
-      >
-        <span class="material-symbols-outlined" data-icon="person_pin"
-          >person_pin</span
-        >
-        <span
-          class="font-['Space_Grotesk'] font-bold text-[10px] tracking-widest"
-          >ME</span
-        >
-      </a>
-      <a
-        class="flex flex-col items-center justify-center text-[#e1e1f5] p-1 hover:bg-[#e1e1f5]/10 group"
+        class="flex flex-col items-center justify-center text-[#b3dff7] p-1 hover:bg-[#b3dff7]/10 group"
         href="#contacto"
       >
         <span
@@ -538,5 +578,16 @@
         >
       </a>
     </nav>
+    <script>
+      function toggleButtons(id) {
+        const actions = document.getElementById(id);
+        // Alterna la clase 'hidden' de Tailwind
+        if (actions.classList.contains("hidden")) {
+          actions.classList.remove("hidden");
+        } else {
+          actions.classList.add("hidden");
+        }
+      }
+    </script>
   </body>
 </html>
