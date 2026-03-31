@@ -133,9 +133,7 @@
         <div
           class="bg-surface-container border-2 border-primary shadow-[4px_4px_0px_0px_#fdb5cc]"
         >
-          <div
-            class="bg-primary px-3 py-1 flex justify-between items-center"
-          >
+          <div class="bg-primary px-3 py-1 flex justify-between items-center">
             <span
               class="text-on-primary text-xs font-bold uppercase tracking-widest"
               >USER_ID</span
@@ -165,17 +163,26 @@
                 TRILLO_LILLO
               </h1>
               <p class="text-on-surface-variant text-xs">
-                FULLSTACK DEVELOPER <br />2D DIGITAL ANIMATOR <br />PIXEL ARTIST<br />Chile / ENG / ESP
+                FULLSTACK DEVELOPER <br />2D DIGITAL ANIMATOR <br />PIXEL
+                ARTIST<br />Chile / ENG / ESP
               </p>
             </div>
             <div class="flex flex-wrap gap-2">
               <span
                 class="bg-surface-bright text-secondary text-[10px] px-2 py-0.5 border border-outline-variant uppercase"
-                >Online</span
+                ><a
+                  href="https://a2849b62-55c4-4bbb-9329-d6462104a8e5.usrfiles.com/ugd/a2849b_cc95ac4d57eb40a1afc4c91ee116a301.pdf"
+                  target="_blank"
+                  >Curriculum (ESP)</a
+                ></span
               >
               <span
-                class="bg-surface-bright text-tertiary text-[10px] px-2 py-0.5 border border-outline-variant uppercase"
-                ><a href="#contacto">CONTACT</a></span
+                class="bg-surface-bright text-primary text-[10px] px-2 py-0.5 border border-outline-variant uppercase"
+                ><a
+                  href="https://a2849b62-55c4-4bbb-9329-d6462104a8e5.usrfiles.com/ugd/a2849b_affe2da22eef41fc8e0fa53177fac410.pdf"
+                  target="_blank"
+                  >Resume (ENG)</a
+                ></span
               >
             </div>
           </div>
@@ -237,7 +244,9 @@
             <p
               class="text-on-surface leading-relaxed text-sm bg-surface-container-low p-4 border-l-4 border-tertiary"
             >
-              Digital Artist, Youtuber, Streamer, Podcaster and Fullstack Developer (Trainee). I dedicate my time and soul to creativity. I'm always eager to learn new things. Based on Chile.
+              Digital Artist, Youtuber, Streamer, Podcaster and Fullstack
+              Developer (Trainee). I dedicate my time and soul to creativity.
+              I'm always eager to learn new things. Based on Chile.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
               <!-- Skill Bars -->
@@ -332,81 +341,133 @@
           </div>
         </section>
         <!-- Bento Grid Visuals -->
-        <section
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
-        >
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <div
-            id="projects" class="bg-surface-container border border-primary h-32 flex items-center justify-center relative group cursor-pointer overflow-hidden"
+            onclick="toggleButtons('kanban-actions')"
+            class="bg-surface-container border border-primary h-32 relative group cursor-pointer overflow-hidden"
           >
             <img
               class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
-              data-alt="aesthetic code blocks on a monitor with purple and pink glowing reflections"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzfkSBVmwLvsC1BhBAcRjnw82MiYyb8qs1GcTWpitay5ybjkdqrRf0buSnGlgTMCfVMv-Z0bycm12BtyQ5grGZ4VotyIEY_xwXiXoJ0ZlFSfV1i9gZzlzbaCVGSciR5znoazPsfUXDwekqlNs24qVm4KgMA6eQUa5l_2jIM_hm7hNfsY0wyzzoxXWiwYPHp-I3-7Na1a7W5t7krm6OXFvZgpLf4LfyOTjiOpmpGhXg9dzqMCkrhopJtOi5qkD4V3rZcSBYV6UtMzQ0"
+              src="https://static.wixstatic.com/media/a2849b_c0d6a1b530c34cf6b5a675179e33f0dc~mv2.png"
             />
-            <span
-              class="relative z-10 text-[10px] font-bold uppercase tracking-widest text-primary border border-primary px-3 py-1 bg-background/80"
-              >KanbanPro</span
+
+            <div
+              id="kanban-label"
+              class="absolute inset-0 flex flex-col items-center justify-center z-10"
             >
+              <span
+                class="text-[10px] font-bold uppercase tracking-widest text-primary border border-primary px-3 py-1 bg-background/80"
+              >
+                KanbanPro
+              </span>
+              <span class="text-[8px] text-primary animate-pulse uppercase mt-2"
+                >[ Click ]</span
+              >
+            </div>
+
+            <div
+              id="kanban-actions"
+              class="hidden absolute inset-0 z-20 bg-background/60 backdrop-blur-[2px] flex flex-col items-center justify-center gap-3 animate-in fade-in duration-200"
+            >
+              <span
+                class="text-[9px] font-bold text-primary uppercase tracking-tighter"
+                >Explorar KanbanPro</span
+              >
+
+              <div class="flex gap-2">
+                <a
+                  href="https://github.com/TrilloLillo/KanbanPro"
+                  target="_blank"
+                  onclick="event.stopPropagation()"
+                  class="bg-primary/2 text-primary px-3 py-1 text-[10px] font-bold uppercase border border-primary hover:bg-primary hover:text-on-primary transition-all"
+                >
+                  <i class="fa fa-github mr-1"></i> Repo
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  onclick="event.stopPropagation()"
+                  class="bg-tertiary/2 text-tertiary px-3 py-1 text-[10px] font-bold uppercase border border-tertiary hover:bg-tertiary hover:text-on-tertiary transition-all"
+                >
+                  <i class="fa fa-external-link mr-1"></i> Live
+                </a>
+              </div>
+            </div>
           </div>
+
           <div
             onclick="toggleButtons('gourmet-actions')"
-            class="bg-surface-container border border-primary flex flex-col  cursor-pointer"
+            class="bg-surface-container border border-secondary h-32 relative group cursor-pointer overflow-hidden"
           >
+            <img
+              class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
+              src="https://images.unsplash.com/photo-1592417817038-d13fd7342605?q=80&w=1170&auto=format&fit=crop"
+            />
+
             <div
-              class="h-32 flex items-center justify-center relative overflow-hidden"
+              id="gourmet-label"
+              class="absolute inset-0 flex flex-col items-center justify-center z-10"
             >
-              <img
-                class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
-                alt="table with lots of food looked from above."
-                src="https://images.unsplash.com/photo-1592417817038-d13fd7342605?q=80&w=1170&auto=format&fit=crop"
-              />
-              <div class="relative z-10 flex flex-col items-center gap-2">
-                <span
-                  class="text-[10px] font-bold uppercase tracking-widest text-secondary border border-secondary px-3 py-1 bg-background/80"
-                >
-                  Gourmet_Go
-                </span>
-                <span class="text-[8px] text-secondary animate-pulse uppercase"
-                  >[ Click to see more ]</span
-                >
-              </div>
+              <span
+                class="text-[10px] font-bold uppercase tracking-widest text-secondary border border-secondary px-3 py-1 bg-background/80"
+              >
+                Gourmet_Go
+              </span>
+              <span
+                class="text-[8px] text-secondary animate-pulse uppercase mt-2"
+                >[ Click ]</span
+              >
             </div>
 
             <div
               id="gourmet-actions"
-              class="hidden flex border-t bg-surface-container-low animate-in slide-in-from-top duration-300"
+              class="hidden absolute inset-0 z-20 bg-background/60 backdrop-blur-[2px] flex flex-col items-center justify-center gap-3 animate-in fade-in duration-200"
             >
-              <a
-                href="https://github.com/TrilloLillo/EF-M4-Gourmet-Go"
-                target="_blank"
-                onclick="event.stopPropagation()"
-                class="flex-1 text-center py-2 text-[10px] font-bold uppercase tracking-tighter text-secondary hover:bg-secondary hover:text-on-secondary transition-colors border-r border-secondary"
+              <span
+                class="text-[9px] font-bold text-secondary uppercase tracking-tighter"
+                >Explorar Gourmet_Go</span
               >
-                <i class="fa fa-github mr-1"></i> Repo
-              </a>
-              <a
-                href="https://trillolillo.github.io/EF-M4-Gourmet-Go/"
-                target="_blank"
-                onclick="event.stopPropagation()"
-                class="flex-1 text-center py-2 text-[10px] font-bold uppercase tracking-tighter text-tertiary hover:bg-tertiary hover:text-on-tertiary transition-colors"
-              >
-                <i class="fa fa-external-link mr-1"></i> Live Demo
-              </a>
+
+              <div class="flex gap-2">
+                <a
+                  href="https://github.com/TrilloLillo/EF-M4-Gourmet-Go"
+                  target="_blank"
+                  onclick="event.stopPropagation()"
+                  class="bg-secondary/5 text-secondary px-3 py-1 text-[10px] font-bold uppercase border border-secondary hover:bg-secondary hover:text-on-secondary transition-all"
+                >
+                  <i class="fa fa-github mr-1"></i> Repo
+                </a>
+                <a
+                  href="https://trillolillo.github.io/EF-M4-Gourmet-Go/"
+                  target="_blank"
+                  onclick="event.stopPropagation()"
+                  class="bg-tertiary/5 text-tertiary px-3 py-1 text-[10px] font-bold uppercase border border-tertiary hover:bg-tertiary hover:text-on-tertiary transition-all"
+                >
+                  <i class="fa fa-external-link mr-1"></i> Live
+                </a>
+              </div>
             </div>
           </div>
-          <a href="https://nintenella.club" target="_blank"><div
-            class="bg-surface-container border border-tertiary h-32 flex items-center justify-center relative group cursor-pointer overflow-hidden sm:col-span-2 lg:col-span-1"
+
+          <a
+            href="https://nintenella.club"
+            target="_blank"
+            class="sm:col-span-2 lg:col-span-1"
           >
-            <img
-              class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
-              data-alt="the first 151 pokemon drawn in a cute way by nintenella"
-              src="https://static.wixstatic.com/media/a2849b_4353dc94ec9d4009b5a96c008834d9c8~mv2.png"
-            />
-            <span
-              class="relative z-10 text-[10px] font-bold uppercase tracking-widest text-tertiary border border-tertiary px-3 py-1 bg-background/80"
-              >ART_PORTFOLIO</span
+            <div
+              class="bg-surface-container border border-tertiary h-32 flex items-center justify-center relative group cursor-pointer overflow-hidden"
             >
-          </div></a>
+              <img
+                class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
+                src="https://static.wixstatic.com/media/a2849b_4353dc94ec9d4009b5a96c008834d9c8~mv2.png"
+              />
+              <span
+                class="relative z-10 text-[10px] font-bold uppercase tracking-widest text-tertiary border border-tertiary px-3 py-1 bg-background/80"
+              >
+                ART_PORTFOLIO
+              </span>
+            </div>
+          </a>
         </section>
         <!-- Contacto -->
         <section
@@ -581,11 +642,16 @@
     <script>
       function toggleButtons(id) {
         const actions = document.getElementById(id);
-        // Alterna la clase 'hidden' de Tailwind
+        // Buscamos el label correspondiente (ej: gourmet-actions -> gourmet-label)
+        const labelId = id.replace("-actions", "-label");
+        const label = document.getElementById(labelId);
+
         if (actions.classList.contains("hidden")) {
           actions.classList.remove("hidden");
+          if (label) label.classList.add("opacity-0"); // Escondemos el nombre original
         } else {
           actions.classList.add("hidden");
+          if (label) label.classList.remove("opacity-0"); // Mostramos el nombre de nuevo
         }
       }
     </script>
