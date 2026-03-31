@@ -205,12 +205,14 @@
             ></span>
             <span
               class="bg-surface-bright text-tertiary text-[20px] px-2 py-0.5 border border-outline-variant uppercase"
-              ><a href="https://www.linkedin.com/in/trillo-lillo-b10a60390/"
+              ><a
+                href="https://www.linkedin.com/in/trillo-lillo-b10a60390/"
+                target="_blank"
                 ><i class="fa fa-linkedin-square"></i></a
             ></span>
             <span
               class="bg-surface-bright text-secondary text-[20px] px-2 py-0.5 border border-outline-variant uppercase"
-              ><a href="https://nintenella.club"
+              ><a href="https://nintenella.club" target="_blank"
                 ><i class="fa fa-external-link-square"></i>Art</a
               ></span
             >
@@ -341,134 +343,95 @@
           </div>
         </section>
         <!-- Bento Grid Visuals -->
-        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div
-            onclick="toggleButtons('kanban-actions')"
-            class="bg-surface-container border border-primary h-32 relative group cursor-pointer overflow-hidden"
-          >
-            <img
-              class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
-              src="https://static.wixstatic.com/media/a2849b_c0d6a1b530c34cf6b5a675179e33f0dc~mv2.png"
-            />
+        <!-- Bento Grid Visuals -->
+<section class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
-            <div
-              id="kanban-label"
-              class="absolute inset-0 flex flex-col items-center justify-center z-10"
-            >
-              <span
-                class="text-[10px] font-bold uppercase tracking-widest text-primary border border-primary px-3 py-1 bg-background/80"
-              >
-                KanbanPro
-              </span>
-              <span class="text-[8px] text-primary animate-pulse uppercase mt-2"
-                >[ Click ]</span
-              >
-            </div>
+  <!-- KanbanPro box -->
+  <div
+    onclick="toggleButtons('kanban-actions')"
+    class="order-1 bg-surface-container border border-primary h-32 relative group cursor-pointer overflow-hidden"
+  >
+    <img class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700" src="https://static.wixstatic.com/media/a2849b_c0d6a1b530c34cf6b5a675179e33f0dc~mv2.png" />
+    <div id="kanban-label" class="absolute inset-0 flex flex-col items-center justify-center z-10">
+      <span class="text-[10px] font-bold uppercase tracking-widest text-primary border border-primary px-3 py-1 bg-background/80">KanbanPro</span>
+      <span class="text-[8px] text-primary animate-pulse uppercase mt-2">[ Click ]</span>
+    </div>
+    <div id="kanban-actions" class="hidden absolute inset-0 z-20 bg-background/60 backdrop-blur-[2px] flex flex-col items-center justify-center gap-3 animate-in fade-in duration-200">
+      <span class="text-[9px] font-bold text-primary uppercase tracking-tighter">Explorar KanbanPro</span>
+      <div class="flex gap-2">
+        <a href="https://github.com/TrilloLillo/KanbanPro" target="_blank" onclick="event.stopPropagation()" class="bg-primary/2 text-primary px-3 py-1 text-[10px] font-bold uppercase border border-primary hover:bg-primary hover:text-on-primary transition-all"><i class="fa fa-github mr-1"></i> Repo</a>
+        <a href="#" target="_blank" onclick="event.stopPropagation()" class="bg-tertiary/2 text-tertiary px-3 py-1 text-[10px] font-bold uppercase border border-tertiary hover:bg-tertiary hover:text-on-tertiary transition-all"><i class="fa fa-external-link mr-1"></i> Live</a>
+      </div>
+    </div>
+  </div>
 
-            <div
-              id="kanban-actions"
-              class="hidden absolute inset-0 z-20 bg-background/60 backdrop-blur-[2px] flex flex-col items-center justify-center gap-3 animate-in fade-in duration-200"
-            >
-              <span
-                class="text-[9px] font-bold text-primary uppercase tracking-tighter"
-                >Explorar KanbanPro</span
-              >
+  <!-- KanbanPro description -->
+  <div class="order-2 bg-surface-container border border-primary h-32 overflow-hidden flex flex-col">
+    <div class="bg-primary px-3 py-1 flex justify-between items-center shrink-0">
+      <span class="text-on-primary text-[10px] font-bold uppercase tracking-widest">kanbanpro_README.md</span>
+      <span class="text-on-primary text-[10px]">■ □</span>
+    </div>
+    <div class="p-3 font-mono text-[12px] space-y-1 overflow-hidden">
+      <p><span class="text-primary">&gt;</span> <span class="text-on-surface-variant">stack:</span> <span class="text-tertiary">React · Node.js · Express · MySQL</span></p>
+      <p><span class="text-primary">&gt;</span> <span class="text-on-surface-variant">desc: </span><span class="text-on-surface">Fullstack Kanban board with drag-and-drop task management, column workflows and user auth.</span></p>
+      <p class="animate-pulse text-primary">█</p>
+    </div>
+  </div>
 
-              <div class="flex gap-2">
-                <a
-                  href="https://github.com/TrilloLillo/KanbanPro"
-                  target="_blank"
-                  onclick="event.stopPropagation()"
-                  class="bg-primary/2 text-primary px-3 py-1 text-[10px] font-bold uppercase border border-primary hover:bg-primary hover:text-on-primary transition-all"
-                >
-                  <i class="fa fa-github mr-1"></i> Repo
-                </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  onclick="event.stopPropagation()"
-                  class="bg-tertiary/2 text-tertiary px-3 py-1 text-[10px] font-bold uppercase border border-tertiary hover:bg-tertiary hover:text-on-tertiary transition-all"
-                >
-                  <i class="fa fa-external-link mr-1"></i> Live
-                </a>
-              </div>
-            </div>
-          </div>
+  <!-- Gourmet Go box -->
+  <div
+    onclick="toggleButtons('gourmet-actions')"
+    class="order-3 bg-surface-container border border-secondary h-32 relative group cursor-pointer overflow-hidden"
+  >
+    <img class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700" src="https://images.unsplash.com/photo-1592417817038-d13fd7342605?q=80&w=1170&auto=format&fit=crop" />
+    <div id="gourmet-label" class="absolute inset-0 flex flex-col items-center justify-center z-10">
+      <span class="text-[10px] font-bold uppercase tracking-widest text-secondary border border-secondary px-3 py-1 bg-background/80">Gourmet_Go</span>
+      <span class="text-[8px] text-secondary animate-pulse uppercase mt-2">[ Click ]</span>
+    </div>
+    <div id="gourmet-actions" class="hidden absolute inset-0 z-20 bg-background/60 backdrop-blur-[2px] flex flex-col items-center justify-center gap-3 animate-in fade-in duration-200">
+      <span class="text-[9px] font-bold text-secondary uppercase tracking-tighter">Explorar Gourmet_Go</span>
+      <div class="flex gap-2">
+        <a href="https://github.com/TrilloLillo/EF-M4-Gourmet-Go" target="_blank" onclick="event.stopPropagation()" class="bg-secondary/5 text-secondary px-3 py-1 text-[10px] font-bold uppercase border border-secondary hover:bg-secondary hover:text-on-secondary transition-all"><i class="fa fa-github mr-1"></i> Repo</a>
+        <a href="https://trillolillo.github.io/EF-M4-Gourmet-Go/" target="_blank" onclick="event.stopPropagation()" class="bg-tertiary/5 text-tertiary px-3 py-1 text-[10px] font-bold uppercase border border-tertiary hover:bg-tertiary hover:text-on-tertiary transition-all"><i class="fa fa-external-link mr-1"></i> Live</a>
+      </div>
+    </div>
+  </div>
 
-          <div
-            onclick="toggleButtons('gourmet-actions')"
-            class="bg-surface-container border border-secondary h-32 relative group cursor-pointer overflow-hidden"
-          >
-            <img
-              class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
-              src="https://images.unsplash.com/photo-1592417817038-d13fd7342605?q=80&w=1170&auto=format&fit=crop"
-            />
+  <!-- Gourmet Go description -->
+  <div class="order-4 bg-surface-container border border-secondary h-32 overflow-hidden flex flex-col">
+    <div class="bg-secondary px-3 py-1 flex justify-between items-center shrink-0">
+      <span class="text-on-secondary text-[10px] font-bold uppercase tracking-widest">gourmet_go_README.md</span>
+      <span class="text-on-secondary text-[10px]">■ □</span>
+    </div>
+    <div class="p-3 font-mono text-[12px] space-y-1 overflow-hidden">
+      <p><span class="text-secondary">&gt;</span> <span class="text-on-surface-variant">stack:</span> <span class="text-tertiary">HTML5 · CSS3 · JavaScript · Bootstrap</span></p>
+      <p><span class="text-secondary">&gt;</span> <span class="text-on-surface-variant">desc: </span><span class="text-on-surface">Recipe searching page with responsive layout and a page for each recipe.</span></p>
+      <p class="animate-pulse text-secondary">█</p>
+    </div>
+  </div>
 
-            <div
-              id="gourmet-label"
-              class="absolute inset-0 flex flex-col items-center justify-center z-10"
-            >
-              <span
-                class="text-[10px] font-bold uppercase tracking-widest text-secondary border border-secondary px-3 py-1 bg-background/80"
-              >
-                Gourmet_Go
-              </span>
-              <span
-                class="text-[8px] text-secondary animate-pulse uppercase mt-2"
-                >[ Click ]</span
-              >
-            </div>
+  <!-- Art Portfolio box -->
+  <a href="https://nintenella.club" target="_blank" class="order-5">
+    <div class="bg-surface-container border border-tertiary h-32 flex items-center justify-center relative group cursor-pointer overflow-hidden">
+      <img class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700" src="https://static.wixstatic.com/media/a2849b_4353dc94ec9d4009b5a96c008834d9c8~mv2.png" />
+      <span class="relative z-10 text-[10px] font-bold uppercase tracking-widest text-tertiary border border-tertiary px-3 py-1 bg-background/80">ART_PORTFOLIO</span>
+    </div>
+  </a>
 
-            <div
-              id="gourmet-actions"
-              class="hidden absolute inset-0 z-20 bg-background/60 backdrop-blur-[2px] flex flex-col items-center justify-center gap-3 animate-in fade-in duration-200"
-            >
-              <span
-                class="text-[9px] font-bold text-secondary uppercase tracking-tighter"
-                >Explorar Gourmet_Go</span
-              >
+  <!-- Art Portfolio description -->
+  <div class="order-6 bg-surface-container border border-tertiary h-32 overflow-hidden flex flex-col">
+    <div class="bg-tertiary px-3 py-1 flex justify-between items-center shrink-0">
+      <span class="text-on-tertiary text-[10px] font-bold uppercase tracking-widest">art_portfolio_README.md</span>
+      <span class="text-on-tertiary text-[10px]">■ □</span>
+    </div>
+    <div class="p-3 font-mono text-[12px] space-y-1 overflow-hidden">
+      <p><span class="text-tertiary">&gt;</span> <span class="text-on-surface-variant">type:</span> <span class="text-primary">2D Animation · Pixel Art · Illustration</span></p>
+      <p><span class="text-tertiary">&gt;</span> <span class="text-on-surface-variant">desc: </span><span class="text-on-surface">Personal art portfolio showcasing digital work, pixel art and animations. Based in Chile.</span></p>
+      <p class="animate-pulse text-tertiary">█</p>
+    </div>
+  </div>
 
-              <div class="flex gap-2">
-                <a
-                  href="https://github.com/TrilloLillo/EF-M4-Gourmet-Go"
-                  target="_blank"
-                  onclick="event.stopPropagation()"
-                  class="bg-secondary/5 text-secondary px-3 py-1 text-[10px] font-bold uppercase border border-secondary hover:bg-secondary hover:text-on-secondary transition-all"
-                >
-                  <i class="fa fa-github mr-1"></i> Repo
-                </a>
-                <a
-                  href="https://trillolillo.github.io/EF-M4-Gourmet-Go/"
-                  target="_blank"
-                  onclick="event.stopPropagation()"
-                  class="bg-tertiary/5 text-tertiary px-3 py-1 text-[10px] font-bold uppercase border border-tertiary hover:bg-tertiary hover:text-on-tertiary transition-all"
-                >
-                  <i class="fa fa-external-link mr-1"></i> Live
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <a
-            href="https://nintenella.club"
-            target="_blank"
-            class="sm:col-span-2 lg:col-span-1"
-          >
-            <div
-              class="bg-surface-container border border-tertiary h-32 flex items-center justify-center relative group cursor-pointer overflow-hidden"
-            >
-              <img
-                class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700"
-                src="https://static.wixstatic.com/media/a2849b_4353dc94ec9d4009b5a96c008834d9c8~mv2.png"
-              />
-              <span
-                class="relative z-10 text-[10px] font-bold uppercase tracking-widest text-tertiary border border-tertiary px-3 py-1 bg-background/80"
-              >
-                ART_PORTFOLIO
-              </span>
-            </div>
-          </a>
-        </section>
+</section>
         <!-- Contacto -->
         <section
           id="contacto"
